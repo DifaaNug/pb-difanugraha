@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <title>Tugas 10</title>
+  </head>
+  <body>
+    <center>
+      <div class="w3-panel w3-red w3-round-xxlarge"><h3>Menampilkan Gambar Untuk Dijadikan Tombol</h3></div>
+
+      <table>
+        <tr>
+          <td>
+            <button class="w3-btn w3-circle" onclick="pertama()"><img class="w3-circle" src="img/gedung.jpg" alt="" width="300" height="300" /></button>
+          </td>
+          <td>
+            <button class="w3-btn" onclick="kedua()"><img src="img/unikom-du.jpg" alt="" width="300" height="300" /></button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <center><p id="satu"></p></center>
+          </td>
+          <td>
+            <center><p id="dua"></p></center>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <hr />
+    <center>
+      <input class="w3-button w3-red w3-round-xxlarge" type="button" value="clear" onclick="proses()" />
+    </center>
+  </body>
+</html>
+
+<script>
+  // Create element untuk membuat element html = h1,div,p dsb.
+  // InnerHtml untuk memambahkan value kedalam sebuah element = <h1>Value dari Inner Html</h1>
+  // Function untuk menambahkan element yang telah dibuat ketika button di klik
+  // GetElementById untuk memanggil id dari button yang akan diberikan fungsi
+  // AppendChild sebuah methode untuk menambahkan element yang telah dibuat kedalam html
+  // RemoveChild untuk menghapus sebuah element
+
+  var paragraf1 = document.createElement("h1");
+  paragraf1.innerHTML = "Difa Nugraha";
+  function pertama() {
+    document.getElementById("satu").appendChild(paragraf1);
+  }
+  var paragraf2 = document.createElement("h1");
+  paragraf2.innerHTML = "Teknik Informatik";
+  function kedua() {
+    document.getElementById("dua").appendChild(paragraf2);
+  }
+
+  function proses() {
+    document.getElementById("satu").removeChild(paragraf1);
+    document.getElementById("dua").removeChild(paragraf2);
+  }
+</script>

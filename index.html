@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="icon-pb.png" />
+    <link rel="stylesheet" href="w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Point Blank</title>
+  </head>
+  <body>
+    <div class="hero"></div>
+    <div class="w3-bar">
+      <button class="w3-bar-item w3-button" onclick="openKota('Home')"><i class="fa-solid fa-house"></i></button>
+      <button class="w3-bar-item w3-button" onclick="openKota('About')">About Me</button>
+      <button class="w3-bar-item w3-button" onclick="openKota('History')">History</button>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Map</button>
+        <div class="w3-dropdown-content w3-bar-block">
+          <button class="w3-bar-item w3-button" onclick="openKota('Downtown')">Downtown</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('Luxvile')">Luxvile</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('BurningHall')">Burning Hall</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('MiniIndonesia')">Mini Indonesia</button>
+        </div>
+      </div>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button">Weapon</button>
+        <div class="w3-dropdown-content w3-bar-block">
+          <button class="w3-bar-item w3-button" onclick="openKota('Aug')">Aug-A3</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('Oa')">OA-93</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('Kriss')">Kriss S.V</button>
+          <button class="w3-bar-item w3-button" onclick="openKota('p90')">P90 Ext</button>
+        </div>
+      </div>
+    </div>
+    <div id="Home" class="w3-container kota w3-animate-top">
+      <center>
+        <h2>PB INDONESIA</h2>
+        <img src="heroo-3.png" alt="" width="320" height="170" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, error! Maiores labore vel, vero corrupti voluptas obcaecati quia nisi porro nesciunt optio accusamus, enim voluptates molestias alias ad sit doloribus accusantium,
+          atque facilis blanditiis? Fuga error beatae obcaecati placeat explicabo ullam dicta voluptas mollitia accusantium id quas eaque, commodi eius.
+        </p>
+      </center>
+    </div>
+    <div id="About" class="w3-container kota w3-animate-zoom" style="display: none">
+      <center>
+        <br /><br />
+        <h2>About Me</h2>
+        <p>Nama : Difa Nugraha</p>
+        <p>Nim : 10122059</p>
+        <p>Kelas : IF-2</p>
+      </center>
+    </div>
+    <div id="History" class="w3-container kota w3-animate-top" style="display: none">
+      <center>
+        <br /><br /><br />
+        <p>
+          PB, yaitu nama singkat yang popular untuk game online point blank. Sekarang ini permainan komputer ber-genre FPS yang dimainkan secara online ini (Point Blank Online) sangat digemari masyarakat dunia, mulai dari kalangan
+          anak-anak, remaja dan bahkan orang tua. Dalam catatan sejarah, asal usul permainan PB atau Point Blank dipublikasikan oleh NCSoft yang dikembangkan oleh Zepetto dari Kore Selatan. Selain Korea Selatan, permainan point blank
+          mempunyai server sendiri di Thailand, Rusia, dan Indonesia. Di Indonesia sendiri game point blank dikelola oleh PT. Kreon melalui Gemscool. Point Blank berkisah tentang perseteruan antara Free Rebels dan pemerintah yang dalam hal
+          ini adalah Counter Terrorist Force(CT-Force). Nah bagi para penggemar Game Online Point Blank, ada beberapa point penting yang perlu Anda ketahui / pelajari dalam asal usul sejarah Point Blank Online.
+        </p>
+      </center>
+    </div>
+
+    <!-- Pembuka Isi Dropdown Map PB -->
+    <div id="Downtown" class="w3-container kota w3-animate-left" style="display: none">
+      <center>
+        <h2>Downtown</h2>
+        <hr />
+        <img src="downtown.jpg" alt="" width="450" height="220" />
+      </center>
+    </div>
+    <div id="Luxvile" class="w3-container kota w3-animate-right" style="display: none">
+      <center>
+        <h2>Luxvile</h2>
+        <hr />
+        <img src="luxvile.jpg" alt="" width="450" height="220" />
+      </center>
+    </div>
+    <div id="BurningHall" class="w3-container kota w3-animate-left" style="display: none">
+      <center>
+        <h2>Burning Hall</h2>
+        <hr />
+        <img src="burninghall.png" alt="" width="450" height="220" />
+      </center>
+    </div>
+    <div id="MiniIndonesia" class="w3-container kota w3-animate-right" style="display: none">
+      <center>
+        <h2>Mini Indonesia</h2>
+        <hr />
+        <img src="mini-indonesia.png" alt="" width="450" height="220" />
+      </center>
+    </div>
+    <!-- Tutup Isi Map PB -->
+
+    <!-- Pembuka Isi Weapon PB -->
+    <div id="Aug" class="w3-container kota w3-animate-left" style="display: none">
+      <center>
+        <h2>Aug-A3</h2>
+        <hr />
+        <img src="aug-a3.jpg" alt="" width="300" height="200" />
+      </center>
+    </div>
+    <div id="Oa" class="w3-container kota w3-animate-right" style="display: none">
+      <center>
+        <h2>OA-93</h2>
+        <hr />
+        <img src="oa-93.webp" alt="" width="300" height="220" />
+      </center>
+    </div>
+    <div id="Kriss" class="w3-container kota w3-animate-left" style="display: none">
+      <center>
+        <h2>Kriss S.V</h2>
+        <hr />
+        <img src="kriss.webp" alt="" width="300" height="200" />
+      </center>
+    </div>
+    <div id="p90" class="w3-container kota w3-animate-right" style="display: none">
+      <center>
+        <h2>P90 Ext</h2>
+        <hr />
+        <img src="p90.png" alt="" width="300" height="200" />
+      </center>
+    </div>
+    <!-- Tutup Isi Weapon PB -->
+  </body>
+</html>
+<script>
+  function openKota(namakota) {
+    var i;
+    var x = document.getElementsByClassName("kota");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(namakota).style.display = "block";
+  }
+</script>
